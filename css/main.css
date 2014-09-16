@@ -51,7 +51,9 @@ body {
   list-style-type: none;
 }
 
-.chart__item {
+.chart__item,
+.chart__item:link,
+.chart__item:visited {
   float: left;
   height: 16em;
   margin: 0 0.5%;
@@ -59,6 +61,13 @@ body {
   width: 7.3%;
 
   background-color: rgba(204, 204, 204, 0);
+}
+
+.chart__item:hover,
+.chart__item:focus,
+.chart__item:active {
+    background-color: rgba(204, 204, 204, 1.00)
+    
 }
 
 .chart__link,
@@ -78,20 +87,39 @@ body {
   text-align: center;
 }
 
+.chart__label:hover,
+.chart__label:focus,
+.chart__label:active {
+    background-color: rgba (255, 255, 255, 1.00);
+    
+}
+
 .chart__bar-wrap {
   bottom: 0;
   position: absolute;
   width: 100%;
 }
 
-.chart__bar {
+.chart__bar,
+.chart__bar:link,
+.chart__bar:visited {
   bottom: 0;
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
+        
+    transition: 
+        background-color 1000ms linear,
+    ;
 
   background-color: rgba(127, 219, 255, 0.6);
+}
+
+.chart__bar:hover,
+.chart__bar:focus,
+.chart__bar:active {
+    background-color: rgba(127, 219, 255, 1.00);
 }
 
 .chart__count {
