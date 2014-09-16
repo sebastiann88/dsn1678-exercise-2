@@ -130,10 +130,11 @@ body {
   top: -2em;
   width: 4.6em;
   z-index: 1;
+    transition: all 250ms linear;
 
   background-color: #000;
   border-radius: 6px;
-  opacity: 1.00;
+  opacity: 0;
 
   text-align: center;
 }
@@ -154,7 +155,7 @@ body {
   border-top: 10px solid #000;
 }
 
-.chart__bar-wrap::hover .chart__bar-wrap {
-    bottom: 0;
+.chart__bar-wrap:hover .chart__count {
+    top: -4em;
     opacity: 1;
 }
